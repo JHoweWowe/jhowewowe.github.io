@@ -1,0 +1,251 @@
+
+/*This section uses simple scroll-behavior property for Chrome and Mozilla temporarily*/
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: #f1f1f1;
+}
+
+nav a {
+	font-family: 'Raleway', Tahoma, sans-serif;
+}
+
+.jumbotron {
+	display:flex;
+	position: relative;
+	background-image: url('SapaNature.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 90vh;
+	width: 100vw;
+}
+
+.jumbotron ul, li {
+	display: block;
+	justify-content: center;
+	text-align: center;
+	font-size: 5vw;
+	font-family: 'Raleway', Tahoma, sans-serif;
+	list-style-type: none;
+	color: white;
+	padding-top: 5px;
+}
+
+/*Padding is included to ensure spacing is sufficient! */
+.about-me-container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Raleway', Tahoma, sans-serif;
+	padding: 16px 16px;
+}
+.about-me-container h2 {
+	display: block;
+	justify-content: center;
+	margin: 0 16px 0;
+	font-size: 48px;
+}
+.about-me-container h3 {
+	line-height: 1.6;
+}
+
+
+.jumbotron a {
+	display: flex;
+	justify-content: center;
+	width: 50vw;
+
+}
+
+.notable-projects-container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 0;
+	font-family: 'Raleway', Tahoma, sans-serif;
+}
+
+.notable-projects-container video,img {
+  display: block;
+  justify-content: center;
+	margin-left: auto;
+  margin-right: auto;
+	width: 100%;
+}
+
+.notable-projects-container h2{
+	font-size: 48px;
+}
+
+/*Within the Notable Projects container,  */
+.notable-projects-container h4 {
+	font-family: Tahoma, sans-serif;
+}
+
+.notable-projects-container h5 {
+	padding: 0 16px;
+	line-height: 1.6;
+	font-family: 'Raleway', Tahoma, sans-serif;
+}
+
+.best-photos-container h2 {
+	display: flex;
+	justify-content: center;
+	line-height: 1.6;
+	margin: 0;
+	font-size: 48px;
+	padding: 0 16px 16px;
+	font-family: 'Raleway', Tahoma, sans-serif;
+}
+
+.best-photos-container img {
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+	width: 95%;
+}
+
+.contact-me-container {
+	padding: 16px 20px 0;
+	font-family: 'Raleway', Tahoma, sans-serif;
+}
+
+.contact-me-container img {
+  display: inline-block;
+	justify-content: center;
+	width: 100px;
+	padding: 0 16px 0;
+}
+
+.contact-me-container h2 {
+	padding-top: 16px !important;
+  display: block;
+	justify-content: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.6;
+	font-size: 48px;
+}
+
+.footer-container h4 {
+	display: flex;
+	justify-content: center;
+	font-family: 'Raleway', Tahoma, sans-serif;
+}
+
+#sideNote {
+	display: flex;
+	justify-content: flex-end;
+	line-height: 1.6;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+/*Personal Favourite Photographs Section Support: */
+/*Styling images for triggering modal- code from W3Schools*/
+
+#alleyway {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+} #alleyway:hover {opacity: 0.7;}
+
+#flower {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+} #flower:hover {opacity: 0.7;}
+
+#kuehWithFlower {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+} #kuehWithFlower:hover {opacity: 0.7;}
+
+#guitarPlayer {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+} #guitarPlayer:hover {opacity: 0.7;}
+
+/* Background- the modal itself (Class template can be implemented for multiple images in the gallery) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place, even when scrolling */
+  z-index: 1; /* Sit on top */
+	padding: 25px 0 0 0; /* Top padding implemented only. */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content- must keep an aspect ratio of 1:3 (width:height)*/
+.modal-content {
+  margin: auto;
+  display: block;
+	max-width: 30%;
+	max-height: 90%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption, #caption2, #caption3, #caption4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption, #caption2, #caption3, #caption4 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #cccccc !important;
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

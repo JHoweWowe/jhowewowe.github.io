@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Justin Howe's Personal Website</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale:1">
+	<link rel="stylesheet" type="text/css" href="mainJuly2019.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Raleway"/>
+
+
+<body>
+	<!-- Using BootStrap to create a solid navigation bar as the header -->
+	<!-- To be Completed: A triple layered bar which extends the navigation bar when clicked for a phone or small devices -->
+	<nav class="navbar navbar-default" id="navigationBar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a style="font-size:24px" class="navbar-brand" href="#"><b>Justin Howe</b></a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a style="font-size:16px" href="#about-me">About Me</a></li>
+				<li><a style="font-size:16px" href="#notable-projects">Notable Projects</a></li>
+				<li><a style="font-size:16px" href="#best-photographs">Best Photographs</a></li>
+				<li><a style="font-size:16px" href="#contact-me">Contact Me</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<!--For future purposes, I may create a lightbox which shows a rotating gallery for the jumbotron -->
+	<div class="jumbotron">
+		<div class="container">
+			<div class="row text-center">
+				<ul>
+				<!--These descriptors about me can be linked to a particular website page? -->
+					<li>Computer Scientist.</li>
+					<li>Web & Android App Developer.</li>
+					<li>Photographer.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<section class="about-me-container">
+		<div class="row-text">
+			<h2 class="about-me-text" id="about-me">About Me</h2>
+			<h3 class="about-me">
+				<head> Justin is currently enrolled in University of Edinburgh's Computer Science and Artificial Intelligence undergraduate program
+							 as a Year 2 student.
+							 Having prior experience in Java and XML, he successfully obtained
+							 a professional certificate from Udacity in Android App Development.
+							 Besides mobile app development, he demonstrates proficient usage in Java, Python and Haskell
+							 and other programming tools including HTML and CSS.
+							 His casual enjoyment for photography allows him to see the world in a bigger picture.
+			</head> </h3>
+			<a href="justhowe.com/resume/JustinHoweResume.pdf" class="btn btn-primary" role="button">View Resume</a>
+		</div>
+	</section>
+
+	<section class="notable-projects-container">
+		<div class="row-text">
+			<h2 class="notable-projects" id="notable-projects">Notable Projects</h2>
+			<figure class="col-sm-6">
+				<h4>Hello World Hackathon 2020 Website</h4>
+				<a href="https://jhowewowe.github.io/Hello-World-Hack-2020/">
+				<img src="justhowe.com/HWH2020-cover-photo-fixed.png"/></a>
+				<h5>As the lead web developer, I was responsible for creating and designing the website for University of Edinburgh's
+				Hello World Hackathon 2020.</h5>
+			</figure>
+			<figure class="col-sm-6">
+				<h4>Tae Kyung Hwang's Photography Website</h4>
+				<a href="https://taekyungphotography.com">
+				<img src="justhowe.com/TKLandscapeShot.png"/></a>
+				<h5>Designed entirely by scratch using web developer framework tools, I created a customized website for my photographer friend.</h5>
+			</figure>
+			<figure class="col-sm-6">
+				<h4>BooksListingApp</h4>
+				<video controls>
+					<source src="justhowe.com/BooksListingAppV1.mp4" type="video/mp4">
+				</video>
+				<h5>Using the Google Books API, Justin has developed an Android application which allows the user to use a search tool
+				in order to find a particular book title, author, or keyword.</h5>
+			</figure>
+			<figure class="col-sm-6">
+				<h4>PhoneInventoryApp</h4>
+				<a href="https://github.com/JHoweWowe/SamsungInventoryApplication" rel="noopener no referrer" target="_blank">
+				<img src="justhowe.com/PhoneInventoryAppScreenshot.png"/></a>
+				<h5>The mobile application allows the user to keep track of an imaginary supply stock of phones, which has the SQL database stored within the application. </h5>
+			</figure>
+		</div>
+	</section>
+
+	<!--Photography Section -->
+	<section class="best-photos-container">
+		<div class="row-text">
+			<h2 class="best-photographs" id="best-photographs">Personal Best Photographs</h2>
+				<figure class="col-sm-3">
+					<!--Part 1: Image where it triggers the modal -->
+					<img id= "alleyway" src="webComposure1.jpg" alt="Edinburgh Oct 2017" style="width:100%;max-width:300px">
+
+					<!-- Modal itself -->
+					<div id="myModal1" class="modal">
+
+						<!-- Implement close button -->
+						<span class="close">&times;</span>
+
+						<!-- Modal Content (The image itself) -->
+						<img class="modal-content" id="img01">
+
+						<!-- Modal Caption (Image text) -->
+						<div id="caption"></div>
+					</div>
+				</figure>
+
+				<figure class="col-sm-3">
+
+					<img id="flower" src="webFocus.jpg" alt="Singapore 2015" style="width:100%;max-width:300px">
+
+					<div id="myModal2" class="modal">
+
+						<span class="close">&times;</span>
+
+						<img class="modal-content" id="img02">
+
+						<div id="caption2"></div>
+
+					</div>
+				</figure>
+
+				<figure class="col-sm-3">
+
+					<img id="kuehWithFlower" src="Multicolor1.jpg" alt="Rainbow Food Jan 2018" style="width:100%;max-width:300px">
+
+					<div id="myModal3" class="modal">
+
+						<span class="close">&times;</span>
+
+						<img class="modal-content" id="img03">
+
+						<div id="caption3"></div>
+
+					</div>
+				</figure>
+
+				<figure class="col-sm-3">
+					<img id="guitarPlayer" src="Spotlight1.jpg" alt="Vietnam 2014" style="width:100%;max-width:300px">
+
+					<div id="myModal4" class="modal">
+
+						<span class="close">&times;</span>
+
+						<img class="modal-content" id="img04">
+
+						<div id="caption4"></div>
+
+					</div>
+				</figure>
+
+
+		</div>
+	</section>
+
+	<section class="contact-me-container">
+		<div class="row-text">
+			<h2 class="contact-me-text-main" id="contact-me">Contact Me</h2>
+			<h5 class="contact-me-text-support">Feel free to send me an
+<a href="mailto:howejust@gmail.com?Subject=Inquiries" target="_top">email</a> for any particular inquires.</h5>
+			<h5>If you are interested in my web/Android development services, please contact me for more information.</h5>
+			    <a href="https://www.github.com/jhowewowe" rel="noopener noreferrer" target="_blank"><img src="GitHub-Mark.png" alt="GitHub mark" width="100px" height="auto"></a>
+			<a href="https://www.linkedin.com/in/howejust/" rel="noopener noreferrer" target="_blank">
+			<img src="LinkedInLogo.jpg" alt="LinkedIn logo" width="100px" height="auto"></a>
+		</div>
+	</section>
+
+	<!-- This section is currently under development -->
+	<footer>
+		<div class="footer-container">
+			<div class="row-text">
+				<h4 class="col-sm-3">&copy 2019-2020 Justin Howe</h4>
+				<h4 class="col-sm-9" id="sideNote">Email: howejust@gmail.com</h4>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Implement simple JavaScript to allow execution of commands like transitions
+	which is always placed at bottom of the body in html file-->
+
+	<!--jQuery script is installed for future purposes -->
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src= "myscript.js"></script>
+
+</body>
+
+</head>
