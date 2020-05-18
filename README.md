@@ -1,9 +1,10 @@
-# justhowe.com
+# justinhowe.me
 Justin's Personal Website
 ## Description:
 COMING SOON
+Changed to a different domain
 
-Website: justhowe.com
+Website: justinhowe.me
 ## TODO:
 My time shall come.
 ## References:
