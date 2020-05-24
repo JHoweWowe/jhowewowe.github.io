@@ -61,12 +61,12 @@ nav a {
 	font-family: 'Nunito';
 	font-weight: 900;
 }
-.about-me-container #about-me-subHeading, #description, #subHeadingOne, #subHeadingTwo {
+.about-me-container #about-me-subHeading, #description{
 	line-height: 1.5 !important;
 	margin: 16px 0;
 }
-#subHeadingOneContainer, #subHeadingTwoContainer {
-	margin-bottom: 32px;
+.about-me-container #subHeadingOne, #subHeadingTwo {
+	margin-top: 32px;
 }
 
 .about-me-container .about-me-more-container .col-md-4 {
