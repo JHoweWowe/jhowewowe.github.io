@@ -1,3 +1,6 @@
+// Refresh viewport for fixing browser compatibility issues
+$(window).trigger("resize");
+
 /*For the Photography Portfolio gallery, the following JavaScript script
 triggers the modal and then opens the modal along with the image */
 
@@ -8,10 +11,10 @@ var modal3 = document.getElementById("myModal3");
 var modal4 = document.getElementById("myModal4");
 
 // Get the image and insert it inside the modal - use its "alt" text from the html file as a caption
-var img = document.getElementById("alleyway");
-var img2 = document.getElementById("flower");
-var img3 = document.getElementById("kuehWithFlower");
-var img4 = document.getElementById("guitarPlayer");
+var img = document.getElementById("pic1");
+var img2 = document.getElementById("pic2");
+var img3 = document.getElementById("pic3");
+var img4 = document.getElementById("pic4");
 
 var modalImg = document.getElementById("img01");
 var modalImg2 = document.getElementById("img02");
