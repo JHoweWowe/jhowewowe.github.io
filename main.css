@@ -17,13 +17,15 @@ nav {
 	background-color: #f1f1f1;
 }
 nav h1 {
-	font-family: 'Nunito', Tahoma, sans-serif;
-	font-weight: 900;
+	font-family: 'Roboto', Tahoma, sans-serif;
+	font-weight: 700;
+	font-size: 48px;
 }
 
 nav a {
 	font-family: 'Roboto', Tahoma, sans-serif;
 	font-size: 24px;
+	font-weight: 300;
 }
 
 .jumbotron {
@@ -31,7 +33,7 @@ nav a {
 	justify-content: center;
 	text-align: center;
 	position: relative;
-	background-image: url('src/edinburgh1.jpg');
+	background-image: url('src/images/scottishHighlands.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -50,7 +52,7 @@ nav a {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	font-family: 'Roboto', Tahoma, sans-serif;
+	font-family: 'Lato', Tahoma, sans-serif;
 	padding: 16px 0;
 }
 .about-me-container h2 {
@@ -58,9 +60,18 @@ nav a {
 	justify-content: center;
 	margin: 16px 0;
 	font-size: 48px;
-	font-family: 'Nunito';
-	font-weight: 900;
+	font-family: 'Oswald', Tahoma, sans-serif;
+	font-weight: 700;
 }
+.about-me-container #about-me-subHeading {
+	font-family: 'Lato', Tahoma, sans-serif;
+	font-size: 24px;
+}
+.about-me-container .about-me-more-container #title {
+	font-family: 'Oswald', Tahoma, sans-serif;
+	font-size: 24px;
+}
+
 .about-me-container #about-me-subHeading, #description{
 	line-height: 1.5 !important;
 	margin: 16px 0;
@@ -116,7 +127,6 @@ nav a {
 	justify-content: center;
 	text-align: center;
 	padding: 0;
-	font-family: 'Raleway', Tahoma, sans-serif;
 }
 
 .notable-projects-container video,img {
@@ -127,13 +137,25 @@ nav a {
 	width: 100%;
 }
 
-.notable-projects-container h2{
+.notable-projects-container #personal-projects {
 	font-size: 48px;
+	font-family: 'Oswald';
+	font-weight: 700;
+	margin: 16px 0;
 }
 
 /*Within the Notable Projects container,  */
 .notable-projects-container h4 {
-	font-family: Tahoma, sans-serif;
+	font-size: 36px;
+	font-family: 'Oswald', 'Roboto', Tahoma, sans-serif;
+	font-weight: 400;
+}
+
+.notable-projects-container h5 {
+	padding: 8px 16px 8px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Roboto', Tahoma, sans-serif;
 }
 
 /**NOTE: Implement responsive design where there are breakpoints **/
@@ -150,33 +172,16 @@ nav a {
 	}
 }
 
-.notable-projects-container #personal-projects {
-	margin: 16px 0;
-	font-family: 'Nunito';
-	font-weight: 900;
-}
-
-.notable-projects-container h4 {
-	font-family: 'Roboto', Tahoma, sans-serif;
-	font-weight: 900;
-}
-.notable-projects-container h5 {
-	padding: 0 16px;
-	line-height: 1.6;
-	font-family: 'Roboto', Tahoma, sans-serif;
-	font-weight: 400;
-}
-
 .best-photos-container h2 {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	line-height: 1.6;
+	line-height: 1.5;
 	margin: 0;
 	font-size: 48px;
 	padding: 0 16px 16px;
-	font-family: 'Nunito', Tahoma, sans-serif;
-	font-weight: 900;
+	font-family: 'Oswald', Tahoma, sans-serif;
+	font-weight: 700;
 }
 
 .best-photos-container img {
@@ -189,7 +194,6 @@ nav a {
 
 .contact-me-container {
 	padding: 16px 20px 0;
-	font-family: 'Nunito', Tahoma, sans-serif;
 }
 
 .contact-me-container img {
@@ -200,25 +204,62 @@ nav a {
 }
 
 .contact-me-container h2 {
-	font-weight: 900;
+	font-family: 'Oswald', Tahoma, sans-serif;
+	font-size: 48px;
+	font-weight: 700;
 	padding-top: 16px !important;
   display: block;
 	justify-content: center;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	line-height: 1.6;
-	font-size: 48px;
+	line-height: 1.5;
 }
 .contact-me-container h5 {
 	text-align: center;
+	font-family: 'Lato', 'Roboto', Tahoma, sans-serif;
+	font-size: 24px;
+	line-height: 1.5 !important;
 }
 .contact-me-container .links {
 	display: flex;
 	justify-content: center;
 
 }
-
+/** View Resume button - added hover feature **/
+.about-me-container #viewResumeButton {
+	font-size: 24px;
+	font-family: 'Lato', 'Roboto', Tahoma, sans-serif;
+	border: none;
+	text-align: center;
+	padding: 16px;
+	transition: all 0.5s;
+  cursor: pointer;
+  align-items: center;
+	width: 200px;
+}
+#viewResumeButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+/** Creates the arrow if user were to submit form **/
+#viewResumeButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#viewResumeButton:hover span {
+  padding-right: 20px;
+}
+#viewResumeButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 
 /*Personal Favourite Photographs Section Support: */
