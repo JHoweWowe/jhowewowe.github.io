@@ -149,10 +149,16 @@ nav a {
 	font-size: 36px;
 	font-family: 'Oswald', 'Roboto', Tahoma, sans-serif;
 	font-weight: 400;
+	margin-bottom: 4px;
+}
+.notable-projects-container #projectDate {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Oswald', Tahoma, sans-serif;
 }
 
-.notable-projects-container h5 {
-	padding: 8px 16px 8px;
+.notable-projects-container #projectDescription {
+	padding: 8px 16px 0px;
 	font-size: 16px;
 	line-height: 1.5;
 	font-family: 'Roboto', Tahoma, sans-serif;
