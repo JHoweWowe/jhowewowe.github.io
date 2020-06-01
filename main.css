@@ -163,6 +163,9 @@ nav a {
 	line-height: 1.5;
 	font-family: 'Roboto', Tahoma, sans-serif;
 }
+.notable-projects-container #booksListingAppHeader {
+	border: 4px solid rgba(0,0,0,1);
+}
 
 /**NOTE: Implement responsive design where there are breakpoints **/
 .notable-projects-container .row-text {
