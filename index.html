@@ -1,266 +1,263 @@
 <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Justin Howe</title>
+		<!-- Important Meta Tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Justin Howe">
+		<meta name="description" content="Justin Howe's Personal Website">
 
-<head>
-	<title>Justin Howe</title>
-	<!-- Important Meta Tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale:1.0, minimum-scale=0.86, maximum-scale=1.0">
-	<meta name="author" content="Justin Howe">
-	<meta name="description" content="Justin Howe's Personal Website">
+		<link rel="icon" href="src/logo.png" type="image/png" sizes="32x32">
 
-	<link rel="icon" href="src/logo.png" type="image/png" sizes="32x32">
+		<!-- NOTE: For web optimization purposes, load CSS asynchronously in order: -->
+		<link rel="preload" href="main.css" as="style">
+		<link rel="stylesheet" type="text/css" href="main.css" media="print" onload="this.media='all'">
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" as="style">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" media="print" onload="this.media='all'"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto"/>
+	</head>
 
-	<!-- NOTE: For web optimization purposes, load CSS asynchronously in order: -->
-	<link rel="preload" href="main.css" as="style">
-	<link rel="stylesheet" type="text/css" href="main.css" media="print" onload="this.media='all'">
-	<link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" as="style">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" media="print" onload="this.media='all'"
-	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto"/>
+	<body>
+		<!-- Using BootStrap to create a solid navigation bar as the header -->
+		<nav class="navbar navbar-expand-md navbar-light bg-white" id="navigationBar">
+			<h1>Justin Howe</h1>
+			<!-- Event handler for navigation bar -->
+			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-</head>
+			<!-- Navigation bar should have ability to collapse at 768px wide -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about-me-heading">About Me</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#personal-projects">Personal Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact-me">Contact Me</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
 
-<body>
-	<!-- Using BootStrap to create a solid navigation bar as the header -->
-	<nav class="navbar navbar-expand-md navbar-light bg-white" id="navigationBar">
-		<h1>Justin Howe</h1>
-		<a id="logo" href="#"><img src="src/logo.png" alt="Website Logo"></a>
-
-		<!-- Event handler for navigation bar -->
-		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-		data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-		aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<!-- Navigation bar should have ability to collapse at 768px wide -->
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#about-me-heading">About Me</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#personal-projects">Personal Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact-me">Contact Me</a>
-				</li>
-			</ul>
+		<!--NOTE: For future purposes, I plan to create an automatic gallery for the jumbotron
+		          when I obtain more engaging photographs  -->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+			</div>
 		</div>
-	</nav>
 
-
-	<!--NOTE: For future purposes, I plan to create an automatic gallery for the jumbotron
-	          when I obtain more engaging photographs  -->
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-		</div>
-	</div>
-
-	<section class="about-me-container">
-		<div class="row-text">
-			<h2 class="about-me-text" id="about-me-heading">About Me</h2>
-			<h5 class="about-me-text" id="about-me-subHeading">
-				<head>With the continuous advancement of digital devices in our modern world,
-					I am fascinated by how transforming innovative ideas into interesting artifacts,
-					such as creating web applications, can blossom a positive impact in people’s lives.
-			</head> </h5>
-			<div class="about-me-more-container">
-				<div class="row">
-					<div class="col-md-4">
-						<img id="computerIcon" src="src/icon/computerIcon.png"/>
-						<h4 id="title">Software Engineer</h4>
-						<p id="description">
-							Having experience with multiple programming languages under my belt,
-							I am currently working as a <b>Robotics Software Engineer Intern</b> at Hand Plus Robotics.</p>
-						<div class="subHeadingOneContainer">
-							<h6 id="subHeadingOne">Programming Languages:</h6>
-							<p id="subHeadingOneDescription">Java, Python, SQL, MATLAB, Haskell, C</p>
+		<section class="about-me-container">
+			<div class="row-text">
+				<h2 class="about-me-text" id="about-me-heading">About Me</h2>
+				<h5 class="about-me-text" id="about-me-subHeading">
+					<head>With the continuous advancement of digital devices in our modern world,
+						I am fascinated by how transforming innovative ideas into interesting artifacts,
+						such as creating web applications, can blossom a positive impact in people’s lives.
+				</head> </h5>
+				<div class="about-me-more-container">
+					<div class="row">
+						<div class="col-md-4">
+							<img id="computerIcon" src="src/icon/computerIcon.png" alt="Computer Icon"/>
+							<h4 id="title">Software Engineer</h4>
+							<p id="description">
+								Having experience with multiple programming languages under my belt,
+								I am currently working as a <b>Robotics Software Engineer Intern</b> at Hand Plus Robotics.</p>
+							<div class="subHeadingOneContainer">
+								<h6 id="subHeadingOne">Programming Languages:</h6>
+								<p id="subHeadingOneDescription">Java, Python, SQL, MATLAB, Haskell, C</p>
+							</div>
+							<div class="subHeadingTwoContainer">
+								<h6 id="subHeadingTwo">Design / Dev Tools:</h6>
+								<p id="subHeadingTwoDescription">Git<br>Eclipse<br>JUnit Testing<br>Android Studio<br>AWS</p>
+							</div>
 						</div>
-						<div class="subHeadingTwoContainer">
+						<div class="col-md-4">
+							<img id="studentIcon" src="src/icon/studentIcon.png" alt="Student Icon"/>
+							<h4 id="title">Student</h4>
+							<p id="description">
+								I recently finished my second year as a <b>Computer Science and Artificial Intelligence</b>
+								undergraduate student at the University of Edinburgh with active leadership involvement.
+							</p>
+							<h6 id="subHeadingOne">Activities:</h6>
+							<p>Programming Society Instructor, Table Tennis Team Captain</p>
+							<h6 id="subHeadingTwo">Relevant Coursework:</h6>
+							<p>Federal Bike Rental System (Java)<br>
+								Heuristics of Travelling Salesman Problem (Python)<br>
+								Planning with PDDL (PDDL)<br>
+								Frog Data Classification and Prediction (MATLAB)</p>
+						</div>
+						<div class="col-md-4">
+							<img id="terminalIcon" src="src/icon/terminalIcon.png" alt="Terminal Icon"/>
+							<h4 id="title">Full Stack Developer</h4>
+							<p id="description">
+								Like Lego, I sincerely value the art of constructing a product starting from nothing
+								and appreciate the product unravel in its finest beauty when finally completed.
+							</p>
+							<h6 id="subHeadingOne">Coding Languages:</h6>
+							<p>HTML, CSS, JavaScript, PHP</p>
 							<h6 id="subHeadingTwo">Design / Dev Tools:</h6>
-							<p id="subHeadingTwoDescription">Git<br>Eclipse<br>JUnit Testing<br>Android Studio<br>AWS</p>
+							<p>BootStrap Framework<br>phpMyAdmin<br>Canvas<br>Pen and Paper<br>WebFlow</p>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<img id="studentIcon" src="src/icon/studentIcon.png"/>
-						<h4 id="title">Student</h4>
-						<p id="description">
-							I recently finished my second year as a <b>Computer Science and Artificial Intelligence</b>
-							undergraduate student at the University of Edinburgh with active leadership involvement.
-						</p>
-						<h6 id="subHeadingOne">Activities:</h6>
-						<p>Programming Society Instructor, Table Tennis Team Captain</p>
-						<h6 id="subHeadingTwo">Relevant Coursework:</h6>
-						<p>Federal Bike Rental System (Java)<br>
-							Heuristics of Travelling Salesman Problem (Python)<br>
-							Planning with PDDL (PDDL)<br>
-							Frog Data Classification and Prediction (MATLAB)</p>
-					</div>
-					<div class="col-md-4">
-						<img id="terminalIcon" src="src/icon/terminalIcon.png"/>
-						<h4 id="title">Full Stack Developer</h4>
-						<p id="description">
-							Like Lego, I sincerely value the art of constructing a product starting from nothing
-							and appreciate the product unravel in its finest beauty when finally completed.
-						</p>
-						<h6 id="subHeadingOne">Coding Languages:</h6>
-						<p>HTML, CSS, JavaScript, PHP</p>
-						<h6 id="subHeadingTwo">Design / Dev Tools:</h6>
-						<p>BootStrap Framework<br>phpMyAdmin<br>Canvas<br>Pen and Paper<br>WebFlow</p>
-					</div>
 				</div>
+				<a href="src/JustinHoweResumeMay2020.pdf"><button id="viewResumeButton"
+				class="btn btn-primary"><span>View Resume</span></button></a>
 			</div>
-			<a href="src/JustinHoweResumeMay2020.pdf"><button id="viewResumeButton"
-			class="btn btn-primary"><span>View Resume</span></button></a>
-		</div>
-	</section>
+		</section>
 
-	<!--NOTE: All photograph visuals should have a 16:9 ratio -->
-	<section class="notable-projects-container">
-		<div class="row-text">
-			<h2 class="notable-projects" id="personal-projects">Personal Projects</h2>
-			<div class="row">
-				<figure class="col-md-6">
-					<h4>Untitled Recipe Project</h4>
-					<h5 id="projectDate">February 2020 - Present</h5>
-					<a><img src="src/images/recipe_placeholder.jpg"/></a>
-					<h5 id="projectDescription">Currently in the process of co-creating a full-stack web application, I developed with HTML/CSS/JavaScript, PHP and phpMyAdmin,
-						to generate specialized recipes in order to help lazy cooks decide what to cook.
-						Configured hosting services on Amazon Web Services (AWS) platform.
-						<br>Coming Soon: Early July 2020?</h5>
-				</figure>
-				<figure class="col-md-6">
-					<h4>Hello World Hackathon 2020 Website</h4>
-					<h5 id="projectDate">October 2019 - February 2020</h5>
-					<a href="https://jhowewowe.github.io/Hello-World-Hack-2020/" rel="noopener no referrer" target="_blank">
-					<img src="src/images/HWH2020-cover-photo-fixed.png"/></a>
-					<h5 id="projectDescription">As lead web developer, I worked with team of ten to develop University of Edinburgh's annual beginner-friendly hackathon details
-						and created a responsive static website using HTML, CSS and BootStrap.</h5>
-				</figure>
-			</div>
-			<div class="row">
-				<figure class="col-md-6">
-					<h4>TK Hwang's Photography Website</h4>
-					<h5 id="projectDate">July 2018 - Present</h5>
-					<a href="https://taekyungphotography.com" rel="noopener no referrer" target="_blank">
-					<img src="src/images/TKLandscapeShot.png"/></a>
-					<h5 id="projectDescription">Customized static website for photographer using HTML5/CSS3 and JavaScript</h5>
-				</figure>
-				<figure class="col-md-6">
-					<h4>BooksListingApp</h4>
-					<h5 id="projectDate">February 2017 - March 2017</h5>
-					<!-- Will refer to a Youtube link instead -->
-					<a href="#">
-						<img id="booksListingAppHeader" src="src/images/booksListingAppHeader.png"/>
-					</a>
-					<h5 id="projectDescription">Using the Google Books API, Justin has developed an Android application which allows the user to use a search tool
-					in order to find a particular book title, author, or keyword.</h5>
-				</figure>
-			</div>
-		</div>
-	</section>
-
-	<!--Photography Section -->
-	<section class="best-photos-container">
-		<div class="row-text">
-			<h2 class="best-photographs" id="best-photographs">Personal Best Photographs</h2>
+		<!--NOTE: All photograph visuals should have a 16:9 ratio -->
+		<section class="notable-projects-container">
+			<div class="row-text">
+				<h2 class="notable-projects" id="personal-projects">Personal Projects</h2>
 				<div class="row">
-					<figure class="col-md-3">
-						<!--Part 1: Image where it triggers the modal -->
-						<img id= "pic1" src="src/photos/dogAndOwner.jpg" alt="Scottish Highlands Summer 2019" style="width:100%;max-width:300px">
-
-						<!-- Modal itself -->
-						<div id="myModal1" class="modal">
-
-							<!-- Implement close button -->
-							<span class="close">&times;</span>
-
-							<!-- Modal Content (The image itself) -->
-							<img class="modal-content" id="img01">
-
-							<!-- Modal Caption (Image text) -->
-							<div id="caption"></div>
-						</div>
+					<figure class="col-md-6">
+						<h4>Untitled Recipe Project</h4>
+						<h5 id="projectDate">February 2020 - Present</h5>
+						<a><img src="src/images/recipe_placeholder.jpg"/ alt="Project One Image"></a>
+						<h5 id="projectDescription">Currently in the process of co-creating a full-stack web application, I developed with HTML/CSS/JavaScript, PHP and phpMyAdmin,
+							to generate specialized recipes in order to help lazy cooks decide what to cook.
+							Configured hosting services on Amazon Web Services (AWS) platform.
+							<br>Coming Soon: Early July 2020?</h5>
 					</figure>
-
-					<figure class="col-md-3">
-
-						<img id="pic2" src="src/photos/webComposure1.jpg" alt="Edinburgh Oct 2017" style="width:100%;max-width:300px">
-
-						<div id="myModal2" class="modal">
-
-							<span class="close">&times;</span>
-
-							<img class="modal-content" id="img02">
-
-							<div id="caption2"></div>
-
-						</div>
-					</figure>
-
-					<figure class="col-md-3">
-
-						<img id="pic3" src="src/photos/Multicolor1.jpg" alt="Rainbow Food Jan 2018" style="width:100%;max-width:300px">
-
-						<div id="myModal3" class="modal">
-
-							<span class="close">&times;</span>
-
-							<img class="modal-content" id="img03">
-
-							<div id="caption3"></div>
-
-						</div>
-					</figure>
-
-					<figure class="col-md-3">
-						<img id="pic4" src="src/photos/Spotlight1.jpg" alt="Vietnam 2014" style="width:100%;max-width:300px">
-
-						<div id="myModal4" class="modal">
-
-							<span class="close">&times;</span>
-
-							<img class="modal-content" id="img04">
-
-							<div id="caption4"></div>
-
-						</div>
+					<figure class="col-md-6">
+						<h4>Hello World Hackathon 2020 Website</h4>
+						<h5 id="projectDate">October 2019 - February 2020</h5>
+						<a href="https://jhowewowe.github.io/Hello-World-Hack-2020/" rel="noopener no referrer" target="_blank">
+						<img src="src/images/HWH2020-cover-photo-fixed.png" alt="Project Two Image"/></a>
+						<h5 id="projectDescription">As lead web developer, I worked with team of ten to develop University of Edinburgh's annual beginner-friendly hackathon details
+							and created a responsive static website using HTML, CSS and BootStrap.</h5>
 					</figure>
 				</div>
-		</div>
-	</section>
-
-	<section class="contact-me-container">
-		<div class="row-text">
-			<h2 class="contact-me-text-main" id="contact-me">Contact Me</h2>
-			<h5 class="contact-me-text-support">What's your idea? What intrigues you?
-				<a href="mailto:howejust@gmail.com?Subject=Inquiries" target="_top">Share</a> your thoughts with me!
-				<br>Or learn more about my profile using these links below:
-			</h5>
-			<div class="links">
-				<a href="https://www.github.com/jhowewowe" rel="noopener noreferrer" target="_blank">
-					<img src="src/logo/GitHub-Mark.png" alt="GitHub mark" width="100px" height="auto"/></a>
-				<a href="https://www.linkedin.com/in/howejust/" rel="noopener noreferrer" target="_blank">
-					<img src="src/logo/LinkedInLogo.jpg" alt="LinkedIn logo" width="100px" height="auto"/></a>
+				<div class="row">
+					<figure class="col-md-6">
+						<h4>TK Hwang's Photography Website</h4>
+						<h5 id="projectDate">July 2018 - Present</h5>
+						<a href="https://taekyungphotography.com" rel="noopener no referrer" target="_blank">
+						<img src="src/images/TKLandscapeShot.png" alt="Project Three Image"/></a>
+						<h5 id="projectDescription">Customized static website for photographer using HTML5/CSS3 and JavaScript</h5>
+					</figure>
+					<figure class="col-md-6">
+						<h4>BooksListingApp</h4>
+						<h5 id="projectDate">February 2017 - March 2017</h5>
+						<!-- Will refer to a Youtube link instead -->
+						<a href="#">
+							<img id="booksListingAppHeader" src="src/images/booksListingAppHeader.png" alt="Project Four Image"/>
+						</a>
+						<h5 id="projectDescription">Using the Google Books API, Justin has developed an Android application which allows the user to use a search tool
+						in order to find a particular book title, author, or keyword.</h5>
+					</figure>
+				</div>
 			</div>
-			<div class="contact">
-				© 2020 Justin Howe. Optimized using CloudFlare.
+		</section>
+
+		<!--Photography Section -->
+		<section class="best-photos-container">
+			<div class="row-text">
+				<h2 class="best-photographs" id="best-photographs">Personal Best Photographs</h2>
+					<div class="row">
+						<figure class="col-md-3">
+							<!--Part 1: Image where it triggers the modal -->
+							<img id= "pic1" src="src/photos/dogAndOwner.jpg" alt="Scottish Highlands Summer 2019" style="width:100%;max-width:300px">
+
+							<!-- Modal itself -->
+							<div id="myModal1" class="modal">
+
+								<!-- Implement close button -->
+								<span class="close">&times;</span>
+
+								<!-- Modal Content (The image itself) -->
+								<img class="modal-content" id="img01">
+
+								<!-- Modal Caption (Image text) -->
+								<div id="caption"></div>
+							</div>
+						</figure>
+
+						<figure class="col-md-3">
+
+							<img id="pic2" src="src/photos/webComposure1.jpg" alt="Edinburgh Oct 2017" style="width:100%;max-width:300px">
+
+							<div id="myModal2" class="modal">
+
+								<span class="close">&times;</span>
+
+								<img class="modal-content" id="img02">
+
+								<div id="caption2"></div>
+
+							</div>
+						</figure>
+
+						<figure class="col-md-3">
+
+							<img id="pic3" src="src/photos/Multicolor1.jpg" alt="Rainbow Food Jan 2018" style="width:100%;max-width:300px">
+
+							<div id="myModal3" class="modal">
+
+								<span class="close">&times;</span>
+
+								<img class="modal-content" id="img03">
+
+								<div id="caption3"></div>
+
+							</div>
+						</figure>
+
+						<figure class="col-md-3">
+							<img id="pic4" src="src/photos/Spotlight1.jpg" alt="Vietnam 2014" style="width:100%;max-width:300px">
+
+							<div id="myModal4" class="modal">
+
+								<span class="close">&times;</span>
+
+								<img class="modal-content" id="img04">
+
+								<div id="caption4"></div>
+
+							</div>
+						</figure>
+					</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<!-- JavaScript needed for animation purposes- defer attribute  -->
+		<section class="contact-me-container">
+			<div class="row-text">
+				<h2 class="contact-me-text-main" id="contact-me">Contact Me</h2>
+				<h5 class="contact-me-text-support">What's your idea? What intrigues you?
+					<a href="mailto:howejust@gmail.com?Subject=Inquiries" target="_top">Share</a> your thoughts with me!
+					<br>Or learn more about my profile using these links below:
+				</h5>
+				<div class="links">
+					<a href="https://www.github.com/jhowewowe" rel="noopener noreferrer" target="_blank">
+						<img src="src/logo/GitHub-Mark.png" alt="GitHub mark" width="100px" height="auto"/></a>
+					<a href="https://www.linkedin.com/in/howejust/" rel="noopener noreferrer" target="_blank">
+						<img src="src/logo/LinkedInLogo.jpg" alt="LinkedIn logo" width="100px" height="auto"/></a>
+				</div>
+				<div class="contact">
+					© 2020 Justin Howe. Optimized with CloudFlare.
+				</div>
+			</div>
+		</section>
 
-	<!--jQuery script is installed for future purposes -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" defer></script>
+		<!-- JavaScript needed for animation purposes- defer attribute  -->
 
-	<script src= "myscript.js" defer></script>
+		<!--jQuery script is installed for future purposes -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" defer></script>
 
-</body>
+		<script src= "myscript.js" defer></script>
+
+	</body>
+</html>
