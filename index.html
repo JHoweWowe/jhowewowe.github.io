@@ -51,8 +51,30 @@
 
 		<!--NOTE: For future purposes, I plan to create an automatic gallery for the jumbotron
 		          when I obtain more engaging photographs  -->
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container">
+		<div id="carouselImageSlideShow" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<picture>
+						<source type="image/webp" srcset="src/images/scottishHighlands_image.webp">
+						<source type="image/jpeg" srcset="src/images/scottishHighlands_image.jpg">
+						<img id="photo1" src="./src/images/scottishHighlands_image.jpg" class="d-block w-100" alt="photo1">
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<picture>
+						<source type="image/webp" srcset="src/images/scottishHighlands_image2.webp">
+						<source type="image/jpeg" srcset="src/images/scottishHighlands_image2.jpg">
+						<img id="photo2" src="./src/images/scottishHighlands_image2.jpg" class="d-block w-100" alt="photo2">
+					</picture>
+				</div>
+				<a class="carousel-control-prev" href="#carouselImageSlideShow" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselImageSlideShow" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
 
@@ -67,7 +89,11 @@
 				<div class="about-me-more-container">
 					<div class="row">
 						<div class="col-md-4">
-							<img id="computerIcon" src="src/icon/computerIcon.png" alt="Computer Icon"/>
+							<picture>
+								<source type="image/webp" srcset="src/icon/computerIcon.webp">
+								<source type="image/png" srcset="src/icon/computerIcon.png">
+								<img id="computerIcon" src="src/icon/computerIcon.png" alt="Computer Icon"/>
+							</picture>
 							<h4 id="title">Software Engineer</h4>
 							<p id="description">
 								Having experience with multiple programming languages under my belt,
@@ -82,7 +108,11 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<img id="studentIcon" src="src/icon/studentIcon.png" alt="Student Icon"/>
+							<picture>
+								<source type="image/webp" srcset="src/icon/studentIcon.webp">
+								<source type="image/png" srcset="src/icon/studentIcon.png">
+								<img id="studentIcon" src="src/icon/studentIcon.png" alt="Student Icon"/>
+							</picture>
 							<h4 id="title">Student</h4>
 							<p id="description">
 								I recently finished my second year as a <b>Computer Science and Artificial Intelligence</b>
@@ -97,7 +127,11 @@
 								Frog Data Classification and Prediction (MATLAB)</p>
 						</div>
 						<div class="col-md-4">
-							<img id="terminalIcon" src="src/icon/terminalIcon.png" alt="Terminal Icon"/>
+							<picture>
+								<source type="image/webp" srcset="src/icon/terminalIcon.webp">
+								<source type="image/png" srcset="src/icon/terminalIcon.png">
+								<img id="terminalIcon" src="src/icon/terminalIcon.png" alt="Terminal Icon"/>
+							</picture>
 							<h4 id="title">Full Stack Developer</h4>
 							<p id="description">
 								Like Lego, I sincerely value the art of constructing a product starting from nothing
@@ -134,8 +168,8 @@
 						<h5 id="projectDate">October 2019 - February 2020</h5>
 						<a href="https://jhowewowe.github.io/Hello-World-Hack-2020/" rel="noopener no referrer" target="_blank">
 						<img src="src/images/HWH2020-cover-photo-fixed.png" alt="Project Two Image"/></a>
-						<h5 id="projectDescription">As lead web developer, I worked with team of ten to develop University of Edinburgh's annual beginner-friendly hackathon details
-							and created a responsive static website using HTML, CSS and BootStrap.</h5>
+						<h5 id="projectDescription">As lead web developer, I worked with team of ten to develop University of Edinburgh's annual beginner-friendly hackathon details,
+							which received over 200 applicants. This responsive static website was designed and implemented with HTML, CSS, and BootStrap.</h5>
 					</figure>
 				</div>
 				<div class="row">

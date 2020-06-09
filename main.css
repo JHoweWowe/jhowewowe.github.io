@@ -28,24 +28,6 @@ nav a {
 	font-weight: 300;
 }
 
-.jumbotron {
-	display:flex;
-	justify-content: center;
-	text-align: center;
-	position: relative;
-	background-image: url('src/images/scottishHighlands.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	margin: auto;
-	/* There's a small bug without following attribute */
-	margin-right: 0;
-	padding: 0 15px;
-	height: 93vh;
-	width: 100vw;
-	margin-bottom: 0px !important;
-}
-
 /*NOTE: Ensure there is consistent padding */
 /*NOTE: Background-color could be purple with #7510f7 */
 .about-me-container {
