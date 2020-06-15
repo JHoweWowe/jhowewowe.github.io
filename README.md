@@ -25,8 +25,8 @@ Version 1.0 [July 2019]:
 ## To-Do:
 - [ ] Navigation text changed to icon pictures?
 - [ ] Implement filters for top 4 projects to showcase (eg: SDE projects, coursework, etc)
-- [ ] Carousel Image Slideshow instead of a jumbotron picture
-- [ ] Create Youtube video for old Android app and implement it
+- [x] Carousel Image Slideshow instead of a jumbotron picture
+- [x] Create Youtube video for old Android app and implement it
 
 ## Inspirational Quotes:
 > "Stay hungry. Stay foolish" - Dr. Seuss
