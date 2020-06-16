@@ -23,6 +23,7 @@ Version 1.0 [July 2019]:
 - Photographs are now clickable to be expanded using JavaScript
 
 ## To-Do:
+- [ ] Create small down button to scroll to next section of website
 - [ ] Navigation text changed to icon pictures?
 - [ ] Implement filters for top 4 projects to showcase (eg: SDE projects, coursework, etc)
 - [x] Carousel Image Slideshow instead of a jumbotron picture
