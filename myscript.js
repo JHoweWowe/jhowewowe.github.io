@@ -1,5 +1,31 @@
+/** JQuery functionality when screen is to be loaded **/
+
 // Refresh viewport for fixing browser compatibility issues
 $(window).trigger("resize");
+
+$(window).on("load", function() {
+  $(window).scroll(function () {
+
+      // Determines height position of browser window top height
+      console.log($(window).scrollTop());
+
+      // Obtain height values for the following (As BootStrap determines varied heights for divs)
+      var navHeight = $("#navigationBar").height();
+      var carouselHeight = $("#carouselImageSlideShow").height();
+      //console.log(navHeight);
+      //console.log(carouselHeight);
+
+      var aboutMe_triggerPosition = (carouselHeight / 1.2);
+      var aboutMe_triggerHeight = (navHeight + carouselHeight) - aboutMe_triggerPosition;
+
+      if ($(window).scrollTop() >= aboutMe_triggerHeight) {
+          $('#about-me-heading').css('visibility', 'visible').hide().fadeIn(2000, "swing")
+          $('#about-me-subHeading').css('visibility', 'visible').hide().fadeIn(4000,"swing");
+          $(this).off('scroll');
+      }
+  });
+});
+
 
 /*For the Photography Portfolio gallery, the following JavaScript script
 triggers the modal and then opens the modal along with the image */

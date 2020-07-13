@@ -20,6 +20,8 @@ nav h1 {
 	font-family: 'Roboto', Tahoma, sans-serif;
 	font-weight: 700;
 	font-size: 48px;
+
+	animation: fadein 2s;
 }
 
 nav a {
@@ -37,14 +39,15 @@ nav a {
 	font-family: 'Lato', Tahoma, sans-serif;
 	padding: 16px 0;
 }
-.about-me-container h2 {
+.about-me-container #about-me-heading {
 	display: block;
 	justify-content: center;
-	margin: 16px 0;
+	padding: 16px 0;
 	font-size: 48px;
 	font-family: 'Oswald', Tahoma, sans-serif;
 	font-weight: 700;
 }
+
 .about-me-container #about-me-subHeading {
 	font-family: 'Lato', Tahoma, sans-serif;
 	font-size: 24px;
@@ -251,6 +254,13 @@ nav a {
   opacity: 1;
   right: 0;
 }
+
+/** Animation key attributes **/
+@keyframes fadein {
+	from { opacity: 0; }
+	to {opacity: 1; }
+}
+
 
 
 /*Personal Favourite Photographs Section Support: */
