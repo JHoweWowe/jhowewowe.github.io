@@ -1,0 +1,56 @@
+/** Footer **/
+footer {
+	background-color: #f8f9fa;
+	padding: 8px 0px;
+  }
+  #footer-left {
+	display: flex;
+  }
+  #footer-right {
+	justify-content: end;
+	text-align: right;
+	font-size: 1rem;
+  }
+  #justin-howe-link, #justin-howe-website-2018-version, #hwh-2019-website-link, #hwh-2020-website-link {
+	color: #B23429;
+	font-family: 'Open Sans', 'Roboto', sans-serif;
+  }
+  /* #ryan-schuller-link:hover, #justin-howe-link:hover {
+	font-weight: bold;
+  } */
+  footer a {
+	  margin: 0px 4px;
+  }
+
+  footer img {
+	justify-content: center;
+	padding: 0 2px 0;
+	filter: grayscale(1);
+	transition-property: filter;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	width: 48px;
+	height: auto;
+  }
+  footer img:hover {
+	filter: grayscale(0);
+  }
+  .social-link {
+	margin-right: 10px;
+  }
+  .social-link:hover {
+	text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+	footer .row {
+	  text-align: center;
+	}
+	#footer-left {
+		justify-content: center;
+	}
+	#footer-right {
+	  text-align: center;
+	  margin-top: 20px;
+	}
+  }

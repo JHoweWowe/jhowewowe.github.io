@@ -1,0 +1,167 @@
+body {
+    overflow-x: hidden;
+    color: #FFFFFF !important;
+}
+
+/** Overlay **/
+/** Simple Flexbox centering with text aligned slightly above for easier visuals **/
+.section1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.section1::before {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #002B53;
+    /* background-color: #E37222; */
+    content: "";
+}
+.container {
+    position: relative;
+    text-align: left;
+}
+
+/** Title + Sub-Heading **/
+#title {
+    position: relative;
+    font-weight: bold;
+    font-size: 5rem;
+    font-family: 'Ubuntu', 'Open Sans', 'Roboto', Arial, sans-serif;
+    margin: 4px 0px;
+}
+#sub-heading {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', 'Roboto', Arial, sans-serif;
+    margin: 4px 0px;
+}
+#sub-heading-2 {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', 'Roboto', Arial, sans-serif;
+}
+
+ul {
+    margin: 16px 0px !important;
+    padding: 4px 0px !important;
+    list-style-type: none;
+}
+li {
+    display: inline;
+    padding-right: 16px;
+}
+
+#form-1-title {
+    font-size: 1.5em;
+    font-family: 'Poppins', 'Ubuntu', 'Open Sans', 'Roboto', Arial, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#form-1-title:hover {
+    font-weight: bold;
+}
+
+/** Learn More Button **/ 
+#learnMoreButton {
+    font-size: 2rem;
+    font-family: 'Poppins', 'Ubuntu', 'Open Sans', 'Roboto', Arial, sans-serif;
+    padding: 8px 24px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    align-items: center;
+    background-color: #B23429;
+    border-color: #B23429;
+}
+#learnMoreButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#learnMoreButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.5s
+}
+#learnMoreButton:hover span {
+    padding-right: 30px;
+}
+#learnMoreButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/** Contact Info: **/
+#contact-me-div {
+    margin: 24px 0px;
+}
+#contact-me-div img {
+    width: 48px;
+    height: auto;
+    margin-right: 8px;
+    filter: grayscale(1);
+    opacity: 0.8;
+    border-radius: 8px;
+	transition-property: filter;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+}
+#contact-me-div img:hover {
+	filter: grayscale(0);
+    opacity: 1;
+}
+
+/** Enhanced accessibility
+For mobile devices: **/
+@media only screen and (max-width: 500px) {
+    #title {
+        font-size: 3.25rem;
+    }
+    #sub-heading, #sub-heading-2 {
+        font-size: 1.5rem;
+    }
+    li {
+        display: block;
+    }
+    #button-container-div {
+        text-align: center;
+    }
+    #learnMoreButton {
+        font-size: 1.5rem !important;
+        width: 275px;
+    }
+}
+/** For tablets - small and large **/
+@media only screen and (min-width: 500px) and (max-width: 1200px) {
+    li {
+        display: block;
+    }
+    #learnMoreButton {
+        width: calc(50% - 16px);
+    }
+    #title {
+        font-size: calc(80% - 64px) rem;
+    }
+    #sub-heading {
+        font-size: 2rem;
+    }
+    #sub-heading-2 {
+        font-size: 1.75rem;
+    }
+    #learnMoreButton {
+        font-size: 1.5em !important;
+    }
+}

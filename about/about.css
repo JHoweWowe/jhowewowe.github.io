@@ -1,0 +1,163 @@
+body {
+	overflow-x: hidden;
+}
+
+
+/** About Me Section **/
+
+/*NOTE: Ensure there is consistent padding */
+/*NOTE: Background-color could be purple with #7510f7 */
+.about-me-container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Roboto', Tahoma, sans-serif;
+	margin: 16px 0px;
+}
+.about-me-container #about-me-heading {
+	display: block;
+	justify-content: center;
+	font-size: 48px;
+	font-family: 'Ubuntu', Tahoma, sans-serif;
+	font-weight: 700;
+	margin: 0px;
+}
+
+.about-me-container #about-me-intro-div {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.about-me-container #about-me-subHeading {
+	font-family: 'Roboto', Tahoma, sans-serif;
+	font-size: 1.5rem;
+}
+.about-me-container .about-me-more-container #title {
+	font-family: 'Ubuntu', Tahoma, sans-serif;
+	font-size: 2rem;
+}
+
+.about-me-container #about-me-subHeading {
+	font-family: 'Ubuntu', Tahoma, sans-serif;
+}
+
+.about-me-container #about-me-subHeading, #description {
+	margin: 16px 0;
+	line-height: 1.5;
+}
+.about-me-container #subHeadingOne, #subHeadingTwo {
+	margin-top: 32px;
+}
+
+.about-me-container .about-me-more-container .col-lg-12 {
+	border-radius: 8px;
+	border: 1px solid rgba(0,0,0,0.2);
+	margin: 0px 16px;
+}
+
+#about-me-div-1 {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+#about-me-div-2 {
+	display: flex;
+	margin: 0 auto;
+}
+
+#about-me-student-div, #about-me-swe-div, #about-me-fs-div {
+	border-radius: 8px;
+	border: 1px solid rgba(0,0,0,0.2);
+	margin: 16px 0px;
+	padding: 0px 16px;
+}
+#about-me-swe-div, #about-me-fs-div {
+	width: 100%;
+}
+
+.about-me-container .about-me-more-container img {
+	margin: 16px auto;
+	width: 48px !important;
+	height: 48px;
+}
+
+/** View Resume button - added hover feature **/
+.about-me-container #viewResumeButton {
+	font-size: 24px;
+	font-family: 'Lato', 'Roboto', Tahoma, sans-serif;
+	border: none;
+	text-align: center;
+	padding: 16px;
+	transition: all 0.5s;
+	cursor: pointer;
+	align-items: center;
+	width: 200px;
+}
+
+/** About Me section - enhanced acessibility **/
+/** Design optimized for mobile devices **/
+@media screen and (max-width: 1200px) {
+    #about-me-div-1 {
+        width: 100%;
+    }
+	.about-me-container #about-me-subHeading {
+		width: 80vw;
+		height: auto;
+		margin: 16px auto 16px;
+		font-size: 1.25rem;
+	}
+	#about-me-div-2 {
+		display: block;
+	}
+
+}
+
+.about-me-container .row-text {
+	width: 80vw;
+	height: auto;
+	padding: 0 15px;
+}
+
+/** Carousel - enhanced acessibility for tablet & laptop usage **/
+/** Design optimized for tablet **/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+	.about-me-container .row-text {
+		width: 80vw;
+		height: auto;
+		padding: 0 15px;
+	}	
+}
+@media screen and (min-width: 768px) {
+	#about-me-student-div #title {
+		font-size: 3rem;
+	}
+	#subHeadingOne, #subHeadingTwo {
+		font-size: 1.5rem;
+		font-family: 'Ubuntu', 'Roboto', 'Open Sans', sans-serif;
+		font-weight: 700;
+	}
+	#about-me-student-div #description, #subHeadingOne-details, #subHeadingTwo-details {
+		font-size: 1rem;
+	}
+}
+
+/* For screen sizes above 768px, enhance wording */
+@media screen and (max-width: 768px) {
+	.about-me-container .row-text {
+		width: 95vw;
+		height: auto;
+	}
+}
+
+/* For laptop / desktop usage */
+@media screen and (min-width: 1200px) {
+	/** About Me Section should be enhanced **/
+	#about-me-swe-div, #about-me-fs-div {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+	#about-me-subHeading {
+		margin: 8px auto !important;
+		width: 60vw;
+	}
+}

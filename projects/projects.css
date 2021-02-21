@@ -1,0 +1,117 @@
+
+.notable-projects-container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 0;
+}
+
+/** Projects Container - University, Featured, Side-Projects **/
+#projects-details-container {
+	margin: 16px 0px;
+}
+#projects-details-text {
+	font-size: 2rem;
+}
+#button-container {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+#button-container button {
+	margin: 8px 16px;
+	font-size: 1.5rem;
+	font-family: 'Ubuntu', 'Roboto', Tahoma, sans-serif;
+	padding: 8px 16px;
+	border: 4px solid #002B53;
+	border-radius: 4px;
+	text-align: center;
+	width: 200px;
+}
+#university-title-btn, #side-projects-title-btn {
+	background-color: #FFFFFF;
+	color: #002B53;
+}
+#featured-title-btn {
+	background-color: #002B53;
+	color: white;
+}
+#university-container {
+	display: none;
+}
+#featured-container {
+	display: block;
+}
+#side-projects-container {
+	display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+	#projects-details-text {
+		font-size: 1.5rem;
+	}
+}
+
+/** TEMPORARY TO BE FIXED **/
+#university-container h5, #side-projects-container h5 {
+	font-size: 3rem;
+}
+@media only screen and (min-height: 800px) {
+	#university-container, #side-projects-container {
+		height: 60vh;
+		/* height: 650px; */
+	}
+}
+
+
+/** Overview **/
+.notable-projects-container video,img {
+  display: block;
+  justify-content: center;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.notable-projects-container #personal-projects {
+	font-size: 48px;
+	font-family: 'Ubuntu';
+	font-weight: 700;
+	margin: 16px 0;
+}
+
+/*Within the Notable Projects container,  */
+.notable-projects-container h4 {
+	font-size: 36px;
+	font-family: 'Ubuntu', 'Roboto', Tahoma, sans-serif;
+	font-weight: 400;
+	margin-bottom: 4px;
+}
+.notable-projects-container #projectDate {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Ubuntu', Tahoma, sans-serif;
+}
+
+.notable-projects-container #projectDescription {
+	padding: 8px 16px 0px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Roboto', Tahoma, sans-serif;
+}
+.notable-projects-container #booksListingAppHeader {
+	border: 4px solid rgba(0,0,0,1);
+}
+
+/**NOTE: Implement responsive design where there are breakpoints **/
+.notable-projects-container .container {
+	width: 90vw;
+	height: auto;
+	padding: 0 15px;
+}
+/* For screen sizes below 768px, enhance wording */
+@media screen and (max-width: 768px) {
+	.notable-projects-container .container {
+		width: 95vw;
+		height: auto;
+	}
+}
