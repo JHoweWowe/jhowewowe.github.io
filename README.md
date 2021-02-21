@@ -3,31 +3,21 @@ Justin's Personal Website
 
 ## Description:
 Everyone's has a story. Here's my story.
+Website Version: 1.3 Beta
 
-## Changes:
-Version 1.2: In addition to my main website, I have recently added a personal technical blog, which explains my budding interest in web development, software engineering and my student life in University of Edinburgh.
+## Version Control History:
+Please refer to the `changes.md` file.
 
-Version 1.1 [May 2020]:
-- Implemented Web Optimization techniques
-  - Defer & async attribute within HTML for simplicity
-  - Images are optimized for web using image compression
-  - Website performance is tested using Google PageSpeed, Waterfall model and GTMetrix
-  - Website "Accessibility", "Best Practices" and "SEO" rating determined by LightHouse
-- Organized content for easier accessibility
-- Uploaded updated resume
-- Added SSL certificate from CloudFlare for faster page loading times and reduction of security vulnerabilities
-- About Me section added to contain three sub-sections describing myself further in detail
+## Developer Overview Notes:
 
-Version 1.0 [July 2019]:
-- Added basic, very minimal content
-- Photographs are now clickable to be expanded using JavaScript
+BootStrap CSS framework Version 5.0 Beta
 
-## To-Do:
-- [ ] Create small down button to scroll to next section of website
-- [ ] Navigation text changed to icon pictures?
-- [ ] Implement filters for top 4 projects to showcase (eg: SDE projects, coursework, etc)
-- [x] Carousel Image Slideshow instead of a jumbotron picture
-- [x] Create Youtube video for old Android app and implement it
+The background color should clearly define my personality as professional, agile yet bold.
+The color palette for this theme is:
+- Primary Color(s): #E37222, #07889B
+- Secondary Color(s): #66B9BF, #EEAA78
+
+Inspired by [Color Scheme #17 - Canva] (https://www.canva.com/learn/website-color-schemes/)
 
 ## Inspirational Quotes:
 > "Stay hungry. Stay foolish" - Dr. Seuss
