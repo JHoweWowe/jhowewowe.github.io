@@ -4,23 +4,27 @@
 This file showcases the changes I have made to my personal website.
 
 ## History
-Version 1.3 Beta [Feb 2021]:
+Version 1.3 Beta [Jan-May 2021]:
 - [x] Landing Page
 - [x] Revamped design for all pages
 - [x] BootStrap version upgraded to version 5.0
 - [x] One-Page website divided into multiple components for expandability
 - [x] Removed blog due to technical difficulties and other time committments
 - [x] Website structure redesigned
+- [x] Create version 2 of logo
+- [x] Implement filters for top 4 projects to showcase (eg: SDE projects, coursework, etc)
+- [x] More projects to be added in Projects section
+- [x] Footer tweaked
+- [x] Update Resume for May 2021
+
 
 - Currently Implementing Following Changes:
-  - [ ] Footer needs slight tweaking
-  - [ ] More projects to be added in Projects section
+  - [ ] Resume updated in early Sept 2021
   - [ ] 'Extras' Section to be created
   - [ ] Navigation active link should be highlighted and edited
-  - [ ] Email contact should be added
-  - [ ] Checking for consistency
-  - [ ] Implement filters for top 4 projects to showcase (eg: SDE projects, coursework, etc)
-
+  - [ ] Add email contact
+  - [ ] Checking for consistency (About and Projects highlight)
+  - [ ] Simple animations and button enhancements
 
 Version 1.2 [Sept 2020]:
 - Added personal technical blog explaining web development, software engineering and my student life in University of Edinburgh

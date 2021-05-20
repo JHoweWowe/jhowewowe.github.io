@@ -56,12 +56,12 @@
 #university-container h5, #side-projects-container h5 {
 	font-size: 3rem;
 }
-@media only screen and (min-height: 800px) {
-	#university-container, #side-projects-container {
+/** @media only screen and (min-height: 800px) {
+	#side-projects-container {
 		height: 60vh;
-		/* height: 650px; */
+		height: 650px;
 	}
-}
+} **/
 
 
 /** Overview **/

@@ -45,7 +45,7 @@ body {
 	margin: 16px 0;
 	line-height: 1.5;
 }
-.about-me-container #subHeadingOne, #subHeadingTwo {
+.about-me-container #subHeadingOne, #subHeadingTwo, #subHeadingThree {
 	margin-top: 32px;
 }
 
@@ -131,12 +131,12 @@ body {
 	#about-me-student-div #title {
 		font-size: 3rem;
 	}
-	#subHeadingOne, #subHeadingTwo {
+	#subHeadingOne, #subHeadingTwo, #subHeadingThree {
 		font-size: 1.5rem;
 		font-family: 'Ubuntu', 'Roboto', 'Open Sans', sans-serif;
 		font-weight: 700;
 	}
-	#about-me-student-div #description, #subHeadingOne-details, #subHeadingTwo-details {
+	#about-me-student-div #description, #subHeadingOne-details, #subHeadingTwo-details, #subHeadingThree-details {
 		font-size: 1rem;
 	}
 }
