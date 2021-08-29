@@ -23,14 +23,16 @@ footer {
   }
 
   footer img {
+	width: 48px;
+	height: auto;
+	filter: grayscale(1);
+	opacity: 0.8;
+	border-radius: 8px;
 	justify-content: center;
 	padding: 0 2px 0;
-	filter: grayscale(1);
 	transition-property: filter;
 	transition-duration: 0.3s;
 	transition-timing-function: ease;
-	width: 48px;
-	height: auto;
   }
   footer img:hover {
 	filter: grayscale(0);

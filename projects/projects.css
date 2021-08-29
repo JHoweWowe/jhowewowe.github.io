@@ -11,7 +11,8 @@
 	margin: 16px 0px;
 }
 #projects-details-text {
-	font-size: 2rem;
+	font-size: 1.5rem;
+	line-height: 1.5;
 }
 #button-container {
 	margin-top: 8px;

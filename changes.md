@@ -4,7 +4,32 @@
 This file showcases the changes I have made to my personal website.
 
 ## History
-Version 1.3 Beta [Jan-May 2021]:
+Version 1.4 [Sept 2021]:
+- [x] Update homepage content and resume
+- [x] Update About Me section
+  - [x] Enhanced word rephrasing
+  - [x] Removed Full-stack Developer component - redudant
+- [ ] Update Projects section
+- [ ] Refactor code
+  - [ ] Remove unnecessary comments
+  - [ ] Homepage code optimized for mobile-first approach
+
+Currently Implementing Following Changes:
+- [ ] About Me
+  - [ ] Work Experience Timeline??
+  - [ ] Visualizations for highlights in Student section
+- [ ] Projects
+  - [ ] Include 'FinTech Fuel 2021 Hackathon' submission with description
+- [ ] Others
+  - [ ] Implement cleaner file directory system
+  - [ ] Create more engaging graphics for projects
+  - [ ] 'Extras' Section to be created
+  - [ ] Navigation active link should be highlighted and edited
+  - [ ] Add email contact
+  - [ ] Checking for consistency (About and Projects highlight)
+  - [ ] Simple animations and button enhancements
+
+Version 1.3 [Jan-May 2021]:
 - [x] Landing Page
 - [x] Revamped design for all pages
 - [x] BootStrap version upgraded to version 5.0
@@ -16,15 +41,6 @@ Version 1.3 Beta [Jan-May 2021]:
 - [x] More projects to be added in Projects section
 - [x] Footer tweaked
 - [x] Update Resume for May 2021
-
-
-- Currently Implementing Following Changes:
-  - [ ] Resume updated in early Sept 2021
-  - [ ] 'Extras' Section to be created
-  - [ ] Navigation active link should be highlighted and edited
-  - [ ] Add email contact
-  - [ ] Checking for consistency (About and Projects highlight)
-  - [ ] Simple animations and button enhancements
 
 Version 1.2 [Sept 2020]:
 - Added personal technical blog explaining web development, software engineering and my student life in University of Edinburgh
