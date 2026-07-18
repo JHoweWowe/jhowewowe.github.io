@@ -3,7 +3,7 @@ Justin's Personal Website
 
 ## Description:
 Everyone's has a story. Here's my story.
-Website Version: 1.3 Beta
+Website Version: 1.4
 
 ## Version Control History:
 Please refer to the `changes.md` file.
